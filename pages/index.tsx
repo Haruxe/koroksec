@@ -13,7 +13,7 @@ const Home: NextPage = () => {
               Protect.
               <br /> Learn. <span className="text-[#80c027] ">Earn.</span>
             </h1>
-            <p className="md:text-[1.5rem] text-[1rem] md:my-10 my-8">
+            <p className="md:text-[1rem] text-[.75rem] md:my-10 my-8">
               The future of blockchain security
               <br /> is decentralized.
             </p>

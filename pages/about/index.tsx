@@ -8,7 +8,7 @@ function index() {
       <div className="max-w-[1100px] mx-auto font-mono flex p-4 flex-col">
         <div className="place-content-center flex flex-col">
           <div>
-            <p className="text-[1.5rem] my-10">~/about</p>
+            <p className="text-lg mb-10">~/pages/about</p>
           </div>
           <div>
             <h1 className="font-bold">Introduction</h1>
@@ -50,6 +50,17 @@ function index() {
               no need to provide your email or personal information. Anonymity
               is one of the most sacred and prized aspects of blockchain
               technology.
+            </p>
+            <h1 className="mt-10 font-bold">Contribute/Governance</h1>
+            <p className="text-sm leading-relaxed mt-5">
+              KorokDAO uses Snapshot, a decentralized voting protocol that
+              utilizes IPFS and wallet signatures to deliver accurate voting and
+              proposals - gas free. The front-end is also open-sourced on
+              GitHub.
+            </p>
+            <h1 className="mt-10 font-bold">Else</h1>
+            <p className="text-sm leading-relaxed mt-5">
+              Got more questions? Join the KorokDAO Discord.
             </p>
           </div>
         </div>

@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta
           property="og:description"
           content="KorokDAO is the most transparent, decentralized, and secure
-              bug bounty platform"
+              bug bounty platform."
           key="ogdesc"
         />
       </Head>

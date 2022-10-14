@@ -6,8 +6,8 @@ function index() {
   // @ts-ignore
   function BountyPage({ name, desc, pay, picture }) {
     return (
-      <div className="border w-full p-5 flex flex-row align-middle space-x-4">
-        <div className="w-[120px] flex-none">
+      <div className="border border-[#666666] mx-auto p-5 flex flex-row align-middle space-x-4 select-none cursor-pointer hover:bg-[#1A1A1A]">
+        <div className="w-[80px] flex my-auto">
           <Image src={picture} width="100" height="100" alt={name} />
         </div>
         <div className="my-auto">
@@ -24,11 +24,11 @@ function index() {
       <div className="max-w-[1100px] mx-auto font-mono flex p-4 flex-col">
         <div className="w-1/2 place-content-center flex flex-col">
           <div>
-            <p className="text-[1.5rem] my-10">~/bounties</p>
+            <p className="text-lg mb-10">~/pages/bounties</p>
           </div>
           <div className="flex flex-row space-x-1">
             <select
-              className="border px-3 py-1 mr-5 flex flex-row space-x-2 bg-transparent"
+              className="border border-[#666666] px-3 py-1 mr-5 flex flex-row space-x-2 bg-transparent"
               defaultValue={"sort"}
             >
               <option value="sort" hidden>
@@ -37,7 +37,7 @@ function index() {
               <option value="new">New</option>
               <option value="payInc">TVL</option>
             </select>
-            <div className="flex flex-row border ">
+            <div className="flex flex-row border border-[#666666] ">
               <input
                 className="px-3 py-1 flex flex-row outline-none bg-transparent"
                 placeholder="Search..."
