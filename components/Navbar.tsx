@@ -63,10 +63,13 @@ function Navbar() {
           <NavButton text="Governance" link="/governance" />
           <NavButton text="About" link="/about" />
         </div>
-        <a className="w-6 ml-auto my-auto" href="https://discord.com">
+        <a className="w-6 ml-auto my-auto" href="https://discord.gg/Zydc7FtCs8">
           <DiscordAlt />
         </a>
-        <a className="w-6 ml-3 my-auto" href="https://github.com">
+        <a
+          className="w-6 ml-3 my-auto"
+          href="https://github.com/Haruxe/korokdao"
+        >
           <Github />
         </a>
         <a className="w-6 ml-3 my-auto" href="https://twitter.com">
