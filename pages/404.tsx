@@ -9,7 +9,7 @@ function FourOhFour() {
           <div>
             <h1 className="text-[4rem] my-auto">ERROR. 404</h1>
             <p className="text-[1.5rem] my-10">
-              Whoops, That Page Doesn't Exist.
+              Whoops, That Page Doesn&apos;t Exist.
             </p>
             <div>
               <Link href="/">

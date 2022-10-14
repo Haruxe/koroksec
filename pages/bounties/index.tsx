@@ -31,6 +31,7 @@ function index() {
               width="100"
               height="100"
               layout="intrinsic"
+              alt="placeholder"
             />
             <div>
               <h1 className="my-auto text-xl tracking-wide">KorokDAO</h1>
