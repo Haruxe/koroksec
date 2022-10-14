@@ -45,7 +45,7 @@ function index() {
             </p>
             <h1 className="mt-10 font-bold">Privacy</h1>
             <p className="text-sm leading-relaxed mt-5">
-              KorokDAO gathers no information about you - it does&apos;nt care!
+              KorokDAO gathers no information about you - it doesn&apos;t care!
               All information leading back to you is linked to your wallet, so
               no need to provide your email or personal information. Anonymity
               is one of the most sacred and prized aspects of blockchain

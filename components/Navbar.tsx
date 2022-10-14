@@ -10,8 +10,8 @@ function Navbar() {
       <svg width="124" height="35.36" viewBox="0 0 310 88.44167245373511">
         <defs id="SvgjsDefs3260">
           <linearGradient id="SvgjsLinearGradient3265">
-            <stop id="SvgjsStop3266" stop-color="#006838" offset="0"></stop>
-            <stop id="SvgjsStop3267" stop-color="#96cf24" offset="1"></stop>
+            <stop id="SvgjsStop3266" stopColor="#006838" offset="0"></stop>
+            <stop id="SvgjsStop3267" stopColor="#96cf24" offset="1"></stop>
           </linearGradient>
         </defs>
         <g
