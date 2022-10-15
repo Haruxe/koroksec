@@ -15,17 +15,17 @@ function index() {
             <p className="text-sm leading-relaxed mt-5">
               KorokDAO is the most transparent, decentralized, and secure
               platform for white-hats and protocols to grow their reputation
-              on-chain. It cuts the middle-man; unlike alternative platforms,
-              Korok is the <u>first</u> protocol to allow hackers to{" "}
-              <i>directly</i> communicate with protocols using the platform, as
-              apposed to using a third-party triaging service that can be slow,
-              unresponsive, and unreliable.
+              on-chain. KorokDAO cuts the middle-man; unlike alternative
+              platforms, Korok is the <u>first</u> P2P bug bounty protocol that
+              allows hackers to <i>directly</i> communicate with protected
+              services using the platform, as apposed to using a third-party
+              triaging service that can be slow, unresponsive, and unreliable.
             </p>
             <p className="text-sm leading-relaxed mt-5">
               This inherantly means that with less employees to pay, KorokDAO
               can charge much less for the service because the program is
-              self-sustaining. Protocols only pay a <s>TBD</s> fee for their
-              services, an extremely competetive rate.
+              self-sustaining. Protocols only pay a 5% fee for their services at
+              an extremely competetive rate.
             </p>
             <h1 className="mt-10 font-bold">Getting Protected</h1>
             <p className="text-sm leading-relaxed mt-5">
@@ -58,9 +58,16 @@ function index() {
               proposals - gas free. The front-end is also open-sourced on
               GitHub.
             </p>
-            <h1 className="mt-10 font-bold">Else</h1>
+            <h1 className="mt-10 font-bold">Help</h1>
             <p className="text-sm leading-relaxed mt-5">
-              Got more questions? Join the KorokDAO Discord.
+              Got more questions? Join the{" "}
+              <a
+                className="w-6 ml-auto my-auto text-[#80c027]"
+                href="https://discord.gg/Zydc7FtCs8"
+              >
+                KorokDAO Discord
+              </a>
+              .
             </p>
           </div>
         </div>

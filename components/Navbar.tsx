@@ -1,10 +1,40 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { DiscordAlt } from "@styled-icons/boxicons-logos/DiscordAlt";
 import { Github } from "@styled-icons/boxicons-logos/Github";
 import { Twitter } from "@styled-icons/evaicons-solid/Twitter";
+import { Menu } from "@styled-icons/boxicons-regular/Menu";
 
 function Navbar() {
+  // Initialize state with undefined width/height so server and client renders match
+  const [windowSize, setWindowSize] = useState({
+    width: 0,
+    height: 0,
+  });
+
+  function handleResize() {
+    // Set window width/height to state
+    setWindowSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  }
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    if (typeof window !== "undefined") {
+      // Handler to call on window resize
+
+      // Add event listener
+      window.addEventListener("resize", handleResize);
+
+      // Call handler right away so state gets updated with initial window size
+      handleResize();
+
+      // Remove event listener on cleanup
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
   function KorokSVG() {
     return (
       <svg width="124" height="35.36" viewBox="0 0 310 88.44167245373511">
@@ -46,22 +76,39 @@ function Navbar() {
       </div>
     );
   }
+
   return (
     <nav className="bg-black bg-opacity-50 backdrop-blur-xl">
       <div className="max-w-[1100px] mx-auto font-mono flex flex-row p-4">
         <div className="flex-row flex space-x-10">
-          <div className="cursor-pointer">
-            <Link href="/">
-              <a>
-                <KorokSVG />
-              </a>
-            </Link>
-          </div>
-          <div className="w-[1px] bg-white h-5 my-auto" />
-          <NavButton text="Bounties" link="/bounties" />
-          <NavButton text="Protection" link="/protection" />
-          <NavButton text="Governance" link="/governance" />
-          <NavButton text="About" link="/about" />
+          {windowSize.width < 800 ? (
+            <>
+              <Menu className="w-8 cursor-pointer" />
+              <div className="w-[1px] bg-white h-5 my-auto" />
+              <div className="cursor-pointer">
+                <Link href="/">
+                  <a>
+                    <KorokSVG />
+                  </a>
+                </Link>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="cursor-pointer">
+                <Link href="/">
+                  <a>
+                    <KorokSVG />
+                  </a>
+                </Link>
+              </div>
+              <div className="w-[1px] bg-white h-5 my-auto" />
+              <NavButton text="Bounties" link="/bounties" />
+              <NavButton text="Protection" link="/protection" />
+              <NavButton text="Governance" link="/governance" />
+              <NavButton text="About" link="/about" />
+            </>
+          )}
         </div>
         <a className="w-6 ml-auto my-auto" href="https://discord.gg/Zydc7FtCs8">
           <DiscordAlt />
