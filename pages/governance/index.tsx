@@ -11,7 +11,8 @@ function index() {
             <p className="text-lg mb-10">~/pages/governance</p>
           </div>
         </div>
-        <div className="mt-10"></div>
+        <h1 className="font-bold">Coming Soon...</h1>
+        <p className="text-sm leading-relaxed mt-5"></p>
       </div>
     </>
   );

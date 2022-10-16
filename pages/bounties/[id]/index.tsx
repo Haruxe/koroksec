@@ -4,16 +4,17 @@ import Image from "next/image";
 
 function index() {
   // @ts-ignore
-  function BountyPage({ name, pay, picture }) {
+  function BountyPage({ name, desc, pay, picture }) {
     return (
-      <div className="border border-[#666666] mx-auto p-5 flex flex-row align-middle space-x-10">
-        <div className="w-[60px] flex my-auto">
+      <div className="border border-[#666666] mx-auto p-5 flex flex-row align-middle space-x-4 select-none cursor-pointer hover:bg-[#1A1A1A]">
+        <div className="w-[80px] flex my-auto">
           <Image src={picture} width="100" height="100" alt={name} />
         </div>
         <div className="my-auto">
-          <h1 className="my-auto tracking-wide">
+          <h1 className="my-auto text-xl tracking-wide">
             {name} {pay}
           </h1>
+          <p className="text-xs mt-1">{desc}</p>
         </div>
       </div>
     );
@@ -46,7 +47,14 @@ function index() {
           </div>
         </div>
         <div className="mt-10">
-          <BountyPage name="KorokDAO" picture="/images/korok.png" pay="$0" />
+          <BountyPage
+            desc="KorokDAO is a decentralized, reputation based, autonomous bug bounty
+            platform and security review protocol with live TVL and up-to-date
+            bug bounty payouts governed by the users and the ones protected."
+            name="KorokDAO"
+            picture="/images/korok.png"
+            pay="$0"
+          />
         </div>
       </div>
     </>

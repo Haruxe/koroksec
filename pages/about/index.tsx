@@ -13,19 +13,18 @@ function index() {
           <div>
             <h1 className="font-bold">Introduction</h1>
             <p className="text-sm leading-relaxed mt-5">
-              KorokDAO is the most transparent, decentralized, and secure
-              platform for white-hats and protocols to grow their reputation
-              on-chain. KorokDAO cuts the middle-man; unlike alternative
+              KorokDAO is the most transparent, decentralized, and secure web3
+              bug bounty platform for white-hats and protocols to grow their
+              reputation. KorokDAO cuts the middle-man; unlike alternative
               platforms, Korok is the <u>first</u> P2P bug bounty protocol that
               allows hackers to <i>directly</i> communicate with protected
               services using the platform, as apposed to using a third-party
               triaging service that can be slow, unresponsive, and unreliable.
             </p>
             <p className="text-sm leading-relaxed mt-5">
-              This inherantly means that with less employees to pay, KorokDAO
-              can charge much less for the service because the program is
-              self-sustaining. Protocols only pay a 5% fee for their services at
-              an extremely competetive rate.
+              This inherantly means that with no employees to pay, KorokDAO can
+              charge much less for the service because it is self-sustaining,
+              protocols only pay a 4.20% fee for their services.
             </p>
             <h1 className="mt-10 font-bold">Getting Protected</h1>
             <p className="text-sm leading-relaxed mt-5">

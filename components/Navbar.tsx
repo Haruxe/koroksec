@@ -104,7 +104,7 @@ function Navbar() {
               </div>
               <div className="w-[1px] bg-white h-5 my-auto" />
               <NavButton text="Bounties" link="/bounties" />
-              <NavButton text="Protection" link="/protection" />
+              <NavButton text="Get Listed" link="/getlisted" />
               <NavButton text="Governance" link="/governance" />
               <NavButton text="About" link="/about" />
             </>
