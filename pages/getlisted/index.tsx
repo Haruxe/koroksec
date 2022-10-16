@@ -4,7 +4,7 @@ import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import placeHolder from "/public/images/placeholder.png";
 
-function index() {
+function Home() {
   const [selectedImage, setSelectedImage] = useState(placeHolder);
   const [description, setDescription] = useState(
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -27,7 +27,12 @@ function index() {
               Project Image <span className="text-[#80c027]">*</span>
             </h1>
             <div className="w-[100px] h-[100px] relative flex-none p-1 border">
-              <Image src={selectedImage} layout="fill" className="my-auto" />
+              <Image
+                src={selectedImage}
+                layout="fill"
+                className="my-auto"
+                alt="photo"
+              />
               {/* <input type="file" className="cursor-pointer" /> */}
             </div>
           </div>
@@ -102,4 +107,4 @@ function index() {
     </>
   );
 }
-export default index;
+export default Home;

@@ -2,7 +2,7 @@ import React from "react";
 import { ChevronUp, ChevronDown, Search } from "@styled-icons/boxicons-regular";
 import Image from "next/image";
 
-function index() {
+function Home() {
   // @ts-ignore
   function BountyPage({ name, pay, picture }) {
     return (
@@ -53,4 +53,4 @@ function index() {
   );
 }
 
-export default index;
+export default Home;

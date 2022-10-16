@@ -2,7 +2,7 @@ import React from "react";
 import { ChevronUp, ChevronDown, Search } from "@styled-icons/boxicons-regular";
 import Image from "next/image";
 
-function index() {
+function Home() {
   return (
     <>
       <div className="max-w-[1100px] mx-auto font-mono flex p-4 flex-col">
@@ -75,4 +75,4 @@ function index() {
   );
 }
 
-export default index;
+export default Home;
