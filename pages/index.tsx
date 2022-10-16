@@ -22,7 +22,7 @@ const Home: NextPage = () => {
                 $_ Hunt
               </a>
             </Link>
-            <Link href="/protection">
+            <Link href="/getlisted">
               <a className="border px-4 py-2 md:text-xl hover:bg-[#1A1A1A]">
                 &gt;_ Get Listed
               </a>
