@@ -147,7 +147,7 @@ function Home() {
           {sources.current.map((e, i) => {
             if (i === 0) {
               return (
-                <div className="md:my-auto">
+                <div className="md:my-auto" key="i">
                   <h1 className="font-bold text-sm">
                     Source 1 <span className="text-[#80c027]">*</span>
                   </h1>
@@ -343,7 +343,7 @@ function Home() {
           {sources.current.map((e, i) => {
             if (e !== "")
               return (
-                <div className="mt-5">
+                <div className="mt-5" key="i">
                   <h1 className="font-bold ">Source {i + 1}</h1>
                   <div className="w-full flex flex-row mt-2 text-sm">
                     <h1 className="text-[#80c027]">{e}</h1>
