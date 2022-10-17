@@ -223,7 +223,7 @@ function Home() {
             <div className="md:w-1/2 w-full flex flex-row mt-4">
               <input
                 className="px-3 py-1 flex flex-row border bg-transparent outline-none my-auto mr-3"
-                placeholder="40,000 DAI"
+                placeholder=""
                 onChange={(e) => setCriticalPayout(e.target.value)}
               />
             </div>
@@ -235,7 +235,7 @@ function Home() {
             <div className="md:w-1/2 w-full flex flex-row mt-4">
               <input
                 className="px-3 py-1 flex flex-row border bg-transparent outline-none my-auto mr-3"
-                placeholder="10,000 USDC"
+                placeholder=""
                 onChange={(e) => setHighPayout(e.target.value)}
               />
             </div>
@@ -247,7 +247,7 @@ function Home() {
             <div className="md:w-1/2 w-full flex flex-row mt-4">
               <input
                 className="px-3 py-1 flex flex-row border bg-transparent outline-none my-auto mr-3"
-                placeholder="5,000 USDT"
+                placeholder=""
                 onChange={(e) => setMediumPayout(e.target.value)}
               />
             </div>
@@ -259,7 +259,7 @@ function Home() {
             <div className="md:w-1/2 w-full flex flex-row mt-4">
               <input
                 className="px-3 py-1 flex flex-row border bg-transparent outline-none my-auto mr-3"
-                placeholder="1 ETH"
+                placeholder=""
                 onChange={(e) => setLowPayout(e.target.value)}
               />
             </div>
@@ -275,7 +275,7 @@ function Home() {
             <div className="md:w-1/2 w-full flex flex-row mt-4">
               <input
                 className="px-3 py-1 flex flex-row border bg-transparent outline-none my-auto mr-3"
-                placeholder="30,000 DAI"
+                placeholder=""
                 onChange={(e) => setCriticalPayout(e.target.value)}
               />
             </div>
@@ -287,7 +287,7 @@ function Home() {
             <div className="md:w-1/2 w-full flex flex-row mt-4">
               <input
                 className="px-3 py-1 flex flex-row border bg-transparent outline-none my-auto mr-3"
-                placeholder="10,000 USDC"
+                placeholder=""
                 onChange={(e) => setHighPayout(e.target.value)}
               />
             </div>
@@ -299,7 +299,7 @@ function Home() {
             <div className="md:w-1/2 w-full flex flex-row mt-4">
               <input
                 className="px-3 py-1 flex flex-row border bg-transparent outline-none my-auto mr-3"
-                placeholder="1,000 USDT"
+                placeholder=""
                 onChange={(e) => setMediumPayout(e.target.value)}
               />
             </div>
@@ -311,7 +311,7 @@ function Home() {
             <div className="md:w-1/2 w-full flex flex-row mt-4">
               <input
                 className="px-3 py-1 flex flex-row border bg-transparent outline-none my-auto mr-3"
-                placeholder="0.420 ETH"
+                placeholder=""
                 onChange={(e) => setLowPayout(e.target.value)}
               />
             </div>
@@ -325,7 +325,7 @@ function Home() {
         </p>
         <div className="flex flex-row space-x-5">
           {selectedImage ? (
-            <div className="w-[150px] h-[150px] relative flex-none p-1 border">
+            <div className="w-[130px] h-[130px] relative flex-none p-1 border">
               <Image
                 src={selectedImage}
                 layout="fill"

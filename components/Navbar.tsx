@@ -5,8 +5,12 @@ import { Github } from "@styled-icons/boxicons-logos/Github";
 import { Twitter } from "@styled-icons/evaicons-solid/Twitter";
 import { Menu } from "@styled-icons/boxicons-regular/Menu";
 import Image from "next/image";
+import { ethers } from "ethers";
+import { Exit } from "styled-icons/boxicons-regular";
 
 function Navbar() {
+  const [loggedIn, setLoggedIn] = useState("0");
+  const [address, setAddress] = useState("");
   // Initialize state with undefined width/height so server and client renders match
   const [windowSize, setWindowSize] = useState({
     width: 0,
@@ -36,6 +40,24 @@ function Navbar() {
       return () => window.removeEventListener("resize", handleResize);
     }
   }, []);
+
+  async function checkIfLoggedIn() {
+    // @ts-ignore
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const signer = provider.getSigner();
+    console.log(signer);
+    if (signer) {
+      setLoggedIn("1");
+      const addresses = await provider.send("eth_requestAccounts", []);
+      const cutAddress = addresses[0].substr(0, 8);
+      setAddress(cutAddress);
+    }
+  }
+
+  useEffect(() => {
+    checkIfLoggedIn();
+  }, []);
+
   function KorokSVG() {
     return (
       <svg width="50" height="26" viewBox="0 0 100 52.17391304347826">
@@ -57,6 +79,7 @@ function Navbar() {
       </svg>
     );
   }
+
   // @ts-ignore
   function NavButton({ text, link }) {
     return (
@@ -68,6 +91,15 @@ function Navbar() {
         </Link>
       </div>
     );
+  }
+
+  async function handleLogin() {
+    // @ts-ignore
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const addresses = await provider.send("eth_requestAccounts", []);
+    if (addresses) {
+      setLoggedIn("1");
+    }
   }
 
   return (
@@ -96,7 +128,7 @@ function Navbar() {
                 </Link>
               </div>
               <div className="w-[1px] bg-white h-5 my-auto" />
-              <NavButton text="Bounties" link="/bounties" />
+              <NavButton text="Bounties" link="/explore" />
               <NavButton text="Get Listed" link="/getlisted" />
               <NavButton text="Governance" link="/governance" />
               <NavButton text="About" link="/about" />
@@ -112,9 +144,30 @@ function Navbar() {
         >
           <Github />
         </a>
-        <a className="w-6 ml-3 my-auto" href="https://twitter.com">
+        <a className="w-6 mx-3 my-auto" href="https://twitter.com">
           <Twitter />
         </a>
+        {loggedIn == "1" ? (
+          <button className="bg-white hover:bg-[#EEEEEE] border  text-black px-2 py-1 text-sm duration-200 flex flex-row">
+            <Image
+              src={
+                "https://github.com/Haruxe/korokdao/profiles/" +
+                address +
+                "/pfp.png"
+              }
+              width="30"
+              height="30"
+            />
+            <h1 className="my-auto ml-2">{address}</h1>
+          </button>
+        ) : (
+          <button
+            className="bg-white hover:bg-[#EEEEEE] border  text-black px-2 py-1 text-sm duration-200"
+            onClick={handleLogin}
+          >
+            Connect
+          </button>
+        )}
       </div>
     </nav>
   );

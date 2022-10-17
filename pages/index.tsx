@@ -40,8 +40,8 @@ const Home: NextPage = () => {
               </g>
             </svg>
             <h1 className="md:text-[4rem] text-[3rem] my-auto mt-3">
-              Protect.
-              <br /> Learn. <span className="text-[#80c027] ">Earn.</span>
+              Prevent.
+              <br /> Evolve. <span className="text-[#80c027] ">$Earn.</span>
             </h1>
             <p className="md:text-[1rem] text-[.75rem] md:my-10 my-8">
               The future of blockchain security
