@@ -74,7 +74,9 @@ function Home() {
             />
           </div>
           <div className="md:my-auto">
-            <h1 className="font-bold text-sm">Project Website</h1>
+            <h1 className="font-bold text-sm">
+              Project Website <span className="text-[#80c027]">*</span>
+            </h1>
             <div className="md:w-1/2 w-full flex flex-row mt-4">
               <input
                 className="px-3 py-1 flex flex-row border bg-transparent outline-none my-auto mr-3"
@@ -82,7 +84,7 @@ function Home() {
                 onChange={(e) => setWebsite(e.target.value)}
               />
               {website ? (
-                <button className="bg-white hover:bg-[#EEEEEE] border flex text-sm text-black px-3 py-[6px] my-auto place-content-center">
+                <button className="bg-white hover:bg-[#EEEEEE] border flex text-sm text-black px-3 py-[6px] my-auto place-content-center duration-200">
                   <X className="w-6 text-red-500 flex my-auto" />
                   <h1 className="flex my-auto">VERIFY</h1>
                 </button>
@@ -118,7 +120,7 @@ function Home() {
         </p>
         <div className="flex flex-row space-x-5">
           <button
-            className="bg-white hover:bg-[#EEEEEE] border flex text-sm text-black px-4 py-2"
+            className="bg-white hover:bg-[#EEEEEE] border flex text-sm text-black px-4 py-2 duration-200"
             onClick={() => {
               if (sourceLength < 10) {
                 sources.current.push("");
@@ -130,7 +132,7 @@ function Home() {
           </button>
           {sources.current.length > 1 ? (
             <button
-              className="bg-white hover:bg-[#EEEEEE] border flex text-sm text-black px-4 py-2"
+              className="bg-white hover:bg-[#EEEEEE] border flex text-sm text-black px-4 py-2 duration-200"
               onClick={() => {
                 if (sources.current.length > 1) {
                   sources.current.pop();
@@ -158,7 +160,7 @@ function Home() {
                       placeholder="-"
                       onChange={(e) => (sources.current[0] = e.target.value)}
                     />
-                    <button className="bg-white hover:bg-[#EEEEEE] border flex text-sm text-black px-3 py-[6px] my-auto place-content-center">
+                    <button className="bg-white hover:bg-[#EEEEEE] border flex text-sm text-black px-3 py-[6px] my-auto place-content-center duration-200">
                       <X className="w-6 text-red-500 flex my-auto" />
                       <h1 className="flex my-auto">VERIFY</h1>
                     </button>
@@ -177,7 +179,7 @@ function Home() {
                         (sources.current[i + 1] = e.target.value)
                       }
                     />
-                    <button className="bg-white hover:bg-[#EEEEEE] border flex text-sm text-black px-3 py-[6px] my-auto place-content-center">
+                    <button className="bg-white hover:bg-[#EEEEEE] border flex text-sm text-black px-3 py-[6px] my-auto place-content-center duration-200">
                       <X className="w-6 text-red-500 flex my-auto" />
                       <h1 className="flex my-auto">VERIFY</h1>
                     </button>
@@ -353,7 +355,7 @@ function Home() {
               );
           })}
         </div>
-        <button className="border px-4 py-2 md:text-xl ml-auto mt-10 hover:bg-[#1A1A1A] cursor-not-allowed">
+        <button className="border px-4 py-2 md:text-xl ml-auto mt-10 hover:bg-[#1A1A1A] cursor-not-allowed  duration-200">
           &gt;_ Get Listed
         </button>
       </div>

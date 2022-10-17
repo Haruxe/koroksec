@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>KorokDAO</title>
+        <title>Korok</title>
         <meta name="description" content="KorokDAO Home" />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:url" content="https://korokdao.xyz" key="ogurl" />
