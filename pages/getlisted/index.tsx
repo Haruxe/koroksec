@@ -16,12 +16,13 @@ function Home() {
   const [mediumPayout, setMediumPayout] = useState("0");
   const [highPayout, setHighPayout] = useState("0");
   const [criticalPayout, setCriticalPayout] = useState("0");
-
+  // @ts-ignore
   const onImageChange = (event) => {
     if (event.target.files && event.target.files[0]) {
       let reader = new FileReader();
       let file = event.target.files[0];
       reader.onloadend = () => {
+        // @ts-ignore
         setSelectedImage(reader.result);
       };
       reader.readAsDataURL(file);
