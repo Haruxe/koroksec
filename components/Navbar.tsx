@@ -7,6 +7,8 @@ import { Menu } from "@styled-icons/boxicons-regular/Menu";
 import Image from "next/image";
 import { ethers } from "ethers";
 import { Exit } from "styled-icons/boxicons-regular";
+import { Profile } from "styled-icons/icomoon";
+import { FaceMask } from "styled-icons/boxicons-solid";
 
 function Navbar() {
   const [loggedIn, setLoggedIn] = useState("0");
@@ -45,12 +47,10 @@ function Navbar() {
     // @ts-ignore
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
-    console.log(signer);
     if (signer) {
       setLoggedIn("1");
       const addresses = await provider.send("eth_requestAccounts", []);
-      const cutAddress = addresses[0].substr(0, 8);
-      setAddress(cutAddress);
+      setAddress(ethers.utils.getAddress(addresses[0]));
     }
   }
 
@@ -60,7 +60,12 @@ function Navbar() {
 
   function KorokSVG() {
     return (
-      <svg width="50" height="26" viewBox="0 0 100 52.17391304347826">
+      <svg
+        width="50"
+        height="26"
+        viewBox="0 0 100 52.17391304347826"
+        className=""
+      >
         <defs>
           <linearGradient id="SvgjsLinearGradient2077">
             <stop id="SvgjsStop2078" stop-color="#006838" offset="0"></stop>
@@ -83,10 +88,10 @@ function Navbar() {
   // @ts-ignore
   function NavButton({ text, link }) {
     return (
-      <div className="my-auto cursor-pointer">
+      <div className="my-auto cursor-pointer border px-4 rounded-full py-3 border-gray-800 font-bold hover:border-gray-100 duration-200">
         <Link href={link}>
-          <a>
-            <h1 className="text-sm">{text}</h1>
+          <a className="my-auto">
+            <h1 className="text-sm tracking-wide">{text}</h1>
           </a>
         </Link>
       </div>
@@ -103,14 +108,13 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-black bg-opacity-50 backdrop-blur-xl duration-200">
+    <nav className="bg-black bg-opacity-50 backdrop-blur-xl duration-300">
       <div className="max-w-[1100px] mx-auto font-mono flex flex-row p-4">
-        <div className="flex-row flex space-x-10">
+        <div className="flex-row flex space-x-4">
           {windowSize.width < 800 ? (
             <>
               <Menu className="w-8 cursor-pointer" />
-              <div className="w-[1px] bg-white h-5 my-auto" />
-              <div className="cursor-pointer">
+              <div className="cursor-pointer my-auto mr-5">
                 <Link href="/">
                   <a>
                     <KorokSVG />
@@ -120,49 +124,58 @@ function Navbar() {
             </>
           ) : (
             <>
-              <div className="cursor-pointer">
+              <div className="cursor-pointer my-auto mr-5">
                 <Link href="/">
                   <a>
                     <KorokSVG />
                   </a>
                 </Link>
               </div>
-              <div className="w-[1px] bg-white h-5 my-auto" />
               <NavButton text="Bounties" link="/explore" />
-              <NavButton text="Get Listed" link="/getlisted" />
               <NavButton text="Governance" link="/governance" />
               <NavButton text="About" link="/about" />
             </>
           )}
         </div>
-        <a className="w-6 ml-auto my-auto" href="https://discord.gg/Zydc7FtCs8">
-          <DiscordAlt />
+        <a
+          className="ml-auto my-auto border rounded-full p-2 border-gray-800 hover:border-gray-100 duration-300 flex"
+          href="https://discord.gg/Zydc7FtCs8"
+        >
+          <DiscordAlt className="w-6" />
         </a>
         <a
-          className="w-6 ml-3 my-auto"
+          className="ml-3 my-auto border rounded-full p-2 border-gray-800 hover:border-gray-100 duration-300 flex"
           href="https://github.com/Haruxe/korokdao"
         >
-          <Github />
+          <Github className="w-6" />
         </a>
-        <a className="w-6 mx-3 my-auto" href="https://twitter.com">
-          <Twitter />
+        <a
+          className="mx-3 my-auto border rounded-full p-2 border-gray-800 hover:border-gray-100 duration-300 flex"
+          href="https://twitter.com"
+        >
+          <Twitter className="w-6" />
         </a>
         {loggedIn == "1" ? (
-          <button className="bg-white hover:bg-[#EEEEEE] border  text-black px-2 py-1 text-sm duration-200 flex flex-row">
-            <Image
-              src={
-                "https://github.com/Haruxe/korokdao/profiles/" +
-                address +
-                "/pfp.png"
-              }
-              width="30"
-              height="30"
-            />
-            <h1 className="my-auto ml-2">{address}</h1>
+          <button className="border rounded-full px-3 py-2 text-sm my-auto duration-300 flex flex-row border-gray-800 hover:border-gray-100">
+            <div className="p-[1px] bg-black flex rounded-full my-auto">
+              {/* <Image
+                src={
+                  "https://github.com/Haruxe/korokdao/blob/main/profiles/" +
+                  address +
+                  "/pfp.png?raw=true"
+                }
+                width="24"
+                height="24"
+                layout="fixed"
+                className="rounded-full"
+              /> */}
+              <FaceMask className="w-6" />
+            </div>
+            <h1 className="my-auto ml-2">{address.substr(0, 8)}</h1>
           </button>
         ) : (
           <button
-            className="bg-white hover:bg-[#EEEEEE] border  text-black px-2 py-1 text-sm duration-200"
+            className="bg-white hover:bg-[#EEEEEE] border  text-black px-2 py-1 text-sm duration-300 hover:border-gray-100"
             onClick={handleLogin}
           >
             Connect
