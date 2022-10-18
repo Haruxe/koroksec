@@ -8,12 +8,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Korok</title>
-        <meta name="description" content="KorokDAO Home" />
+        <meta name="description" content="KorokDAO" />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:url" content="https://korokdao.xyz" key="ogurl" />
         <meta
           property="og:image"
-          content="https://i.imgur.com/4zF1SXn.png"
+          content="https://i.imgur.com/JTnmTvt.png"
           key="ogimage"
         />
         <meta property="og:site_name" content="KorokDAO" key="ogsitename" />
@@ -24,6 +24,13 @@ function MyApp({ Component, pageProps }: AppProps) {
               bug bounty platform."
           key="ogdesc"
         />
+        <meta name="twitter:card" content="https://i.imgur.com/JTnmTvt.png" />
+        <meta name="twitter:title" content="KorokDAO"></meta>
+        <meta
+          name="twitter:description"
+          content="KorokDAO is the most transparent, decentralized, and secure
+              bug bounty platform."
+        ></meta>
       </Head>
       <Navbar />
       <Component {...pageProps} />

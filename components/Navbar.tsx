@@ -44,14 +44,16 @@ function Navbar() {
   }, []);
 
   async function checkIfLoggedIn() {
-    // @ts-ignore
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    const signer = provider.getSigner();
-    if (signer) {
-      setLoggedIn("1");
-      const addresses = await provider.send("eth_requestAccounts", []);
-      setAddress(ethers.utils.getAddress(addresses[0]));
-    }
+    // // @ts-ignore
+    // const provider = new ethers.providers.Web3Provider(window.ethereum);
+    // // @ts-ignore
+    // const isUnlocked = await window?.ethereum?._metamask.isUnlocked();
+    // if (isUnlocked) {
+    //   setLoggedIn("1");
+    //   const signer = provider.getSigner();
+    //   const addresses = await provider.send("eth_requestAccounts", []);
+    //   setAddress(ethers.utils.getAddress(addresses[0]));
+    // }
   }
 
   useEffect(() => {
@@ -104,6 +106,7 @@ function Navbar() {
     const addresses = await provider.send("eth_requestAccounts", []);
     if (addresses) {
       setLoggedIn("1");
+      setAddress(ethers.utils.getAddress(addresses[0]));
     }
   }
 
@@ -156,7 +159,7 @@ function Navbar() {
           <Twitter className="w-6" />
         </a>
         {loggedIn == "1" ? (
-          <button className="border rounded-full px-3 py-2 text-sm my-auto duration-300 flex flex-row border-gray-800 hover:border-gray-100">
+          <button className="border rounded-full px-4 py-2 text-sm my-auto duration-300 flex flex-row border-gray-800 hover:border-gray-100">
             <div className="p-[1px] bg-black flex rounded-full my-auto">
               {/* <Image
                 src={
@@ -175,10 +178,10 @@ function Navbar() {
           </button>
         ) : (
           <button
-            className="bg-white hover:bg-[#EEEEEE] border  text-black px-2 py-1 text-sm duration-300 hover:border-gray-100"
+            className="border-gray-800 border rounded-full px-4 py-2 text-sm duration-300 hover:border-gray-100"
             onClick={handleLogin}
           >
-            Connect
+            Connect Wallet
           </button>
         )}
       </div>
