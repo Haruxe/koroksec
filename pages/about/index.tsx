@@ -64,13 +64,13 @@ function Home() {
               >
                 @erc1337_coffee
               </a>{" "}
-              is a highly skilled security expert who among many others
+              is a highly skilled security expert who, among many other things,
               discovered a significant signature vulnerability in
               OpenZeppelin&apos;s core contracts, which put millions at risk.
-              With an extensive background in web2 audit and exploit experience,
-              he brings valuable expertise to the Korok Security Collective
-              team. In addition to his work in security, @erc1337_coffee has
-              also created numerous{" "}
+              With an extensive background in web2 auditing and bug hunting
+              experience, he brings valuable expertise to the Korok Security
+              Collective team. In addition to his work in security,
+              @erc1337_coffee has also created numerous{" "}
               <a href="https://erc1337.tools/" className="text-yellow-300">
                 tooling
               </a>{" "}
