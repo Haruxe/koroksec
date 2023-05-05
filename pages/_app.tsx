@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:url" content="https://korok.xyz" key="ogurl" />
         <meta
           property="og:image"
-          content="https://i.imgur.com/Ny3XCXv.png"
+          content="https://i.imgur.com/XxlsQlD.png"
           key="ogimage"
         />
         <meta property="og:site_name" content="Korok" key="ogsitename" />
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Korok is a security collective built around highly collaborative and informative exploit disclosure."
           key="ogdesc"
         />
-        <meta name="twitter:card" content="https://i.imgur.com/JTnmTvt.png" />
+        <meta name="twitter:card" content="https://i.imgur.com/XxlsQlD.png" />
         <meta name="twitter:title" content="Korok"></meta>
         <meta
           name="twitter:description"
