@@ -94,7 +94,7 @@ function Navbar() {
                   <Image
                     src="/images/korokLogo.png"
                     className="my-auto flex"
-                    width={25 * 3}
+                    width={25 * 2.5}
                     height={25}
                     alt="logo"
                   />
