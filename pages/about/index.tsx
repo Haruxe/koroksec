@@ -5,7 +5,7 @@ import Image from "next/image";
 function Home() {
   return (
     <>
-      <div className="max-w-[1100px] mx-auto font-mono flex p-4 flex-col">
+      <div className="max-w-[800px] mx-auto font-mono flex p-4 flex-col">
         <div className="place-content-center flex flex-col">
           <div>
             <p className="text-lg mb-10">~/pages/about</p>
@@ -13,58 +13,51 @@ function Home() {
           <div>
             <h1 className="font-bold">Introduction</h1>
             <p className="text-sm leading-relaxed mt-5">
-              KorokDAO is the most transparent, decentralized, and secure web3
-              bug bounty platform for white-hats and protocols to grow their
-              reputation. KorokDAO cuts the middle-man; unlike alternative
-              platforms, Korok is the <u>first</u> P2P bug bounty protocol that
-              allows hackers to <i>directly</i> communicate with protected
-              services using the platform, as apposed to using a third-party
-              triaging service that can be slow, unresponsive, and unreliable.
+              Korok Security Collective is a team of highly skilled
+              professionals focused on providing quick turnaround times and
+              excellent communication for security audits, bug hunting, and
+              security remediation. Led by @haruxeETH and @erc1337_coffee, who
+              have an impressive background in identifying significant
+              vulnerabilities in major protocols like OpenZeppelin, BAOFinance,
+              and more.
             </p>
+            <h1 className="mt-10 font-bold">Our Team</h1>
             <p className="text-sm leading-relaxed mt-5">
-              This inherantly means that with no employees to pay, KorokDAO can
-              charge much less for the service because it is self-sustaining,
-              protocols only pay a 4.20% fee for their services.
-            </p>
-            <h1 className="mt-10 font-bold">Getting Protected</h1>
-            <p className="text-sm leading-relaxed mt-5">
-              After proving ownership of the given contracts you wish to be
-              listed, as well as the payout range, the program will immediately
-              be available on the bounty page. Rather than screening each
-              program to ensure validity, your project will gain reputation over
-              time which will make it both more visible and more appealing to
-              white-hats.
-            </p>
-            <p className="text-sm leading-relaxed mt-5">
-              Lowering the barrier of entry is also a benefit for the
-              white-hats. Beginners can grow their repetoir of found
-              vulnerabilities by finding low-hanging fruit on smaller projects
-              without worrying about payouts - the project wins as well because
-              they are protected!
-            </p>
-            <h1 className="mt-10 font-bold">Privacy</h1>
-            <p className="text-sm leading-relaxed mt-5">
-              KorokDAO gathers no information about you - it doesn&apos;t care!
-              All information leading back to you is linked to your wallet, so
-              no need to provide your email or personal information. Anonymity
-              is one of the most sacred and prized aspects of blockchain
-              technology.
-            </p>
-            <h1 className="mt-10 font-bold">Contribute/Governance</h1>
-            <p className="text-sm leading-relaxed mt-5">
-              KorokDAO uses Snapshot, a decentralized voting protocol that
-              utilizes IPFS and wallet signatures to deliver accurate voting and
-              proposals - gas free. The front-end is also open-sourced on
-              GitHub.
-            </p>
-            <h1 className="mt-10 font-bold">Help</h1>
-            <p className="text-sm leading-relaxed mt-5">
-              Got more questions? Join the{" "}
+              @haruxeETH is an experienced programmer with a background in game
+              development and web development. He has partnered with Immunefi to
+              publish articles and also self-published articles on his own at{" "}
               <a
-                className="w-6 ml-auto my-auto text-[#80c027]"
+                href="https://mirror.xyz/haruxeETH"
+                className="text-yellow-300"
+              >
+                https://mirror.xyz/haruxeETH
+              </a>
+              .
+            </p>
+            <p className="text-sm leading-relaxed mt-5">
+              @erc1337_coffee has discovered a significant signature
+              vulnerability in OpenZeppelin&apos;s core contracts, which put
+              millions at risk. With a strong background in traditional web2
+              security, he brings valuable expertise to the team.
+            </p>
+            <h1 className="mt-10 font-bold">Our Approach</h1>
+            <p className="text-sm leading-relaxed mt-5">
+              Korok Security Collective aims to streamline the process of
+              security audits, bug hunting, and security remediation by
+              maintaining open communication channels with the team and ensuring
+              quick turnaround times. We believe in transparency and
+              collaboration to provide the best possible solutions for our
+              clients.
+            </p>
+            <h1 className="mt-10 font-bold">Get in Touch</h1>
+            <p className="text-sm leading-relaxed mt-5">
+              If you need our expertise or have any questions, feel free to
+              reach out to us on our{" "}
+              <a
+                className="w-6 ml-auto my-auto text-yellow-300"
                 href="https://discord.gg/Zydc7FtCs8"
               >
-                KorokDAO Discord
+                Discord
               </a>
               .
             </p>
