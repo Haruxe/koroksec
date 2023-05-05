@@ -66,7 +66,7 @@ function Navbar() {
       <div className="my-auto cursor-pointer font-bold px-1 sm:px-2 duration-300 flex hover:text-yellow-300">
         <Link href={link}>
           <a className="my-auto">
-            <h1 className="text-xxs sm:text-sm tracking-wide">{text}</h1>
+            <h1 className="text-[.75rem] sm:text-sm tracking-wide">{text}</h1>
           </a>
         </Link>
       </div>
