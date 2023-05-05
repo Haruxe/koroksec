@@ -20,13 +20,14 @@ body {
   background-color: #000000;
   opacity: 1;
   background-image: radial-gradient(
-      rgba(252, 222, 71, 0.1) 0.9px,
-      transparent 0.9px
+      rgba(239, 255, 10, 0.18) 0.75px,
+      transparent 0.75px
     ),
-    radial-gradient(rgba(252, 222, 71, 0.1) 0.9px, #000000 0.9px);
-  background-size: 36px 36px;
-  background-position: 0 0, 18px 18px;
+    radial-gradient(rgba(239, 255, 10, 0.18) 0.75px, #000000 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
 }
+
 ::-moz-selection {
   /* Code for Firefox */
   color: black;

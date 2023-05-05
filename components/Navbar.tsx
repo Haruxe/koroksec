@@ -63,10 +63,10 @@ function Navbar() {
   // @ts-ignore
   function NavButton({ text, link }) {
     return (
-      <div className="my-auto cursor-pointer font-bold duration-200 px-2">
+      <div className="my-auto cursor-pointer font-bold px-1 sm:px-2 duration-300 flex hover:text-yellow-300">
         <Link href={link}>
           <a className="my-auto">
-            <h1 className="text-sm tracking-wide">{text}</h1>
+            <h1 className="text-xxs sm:text-sm tracking-wide">{text}</h1>
           </a>
         </Link>
       </div>
@@ -84,17 +84,17 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-black bg-opacity-50 backdrop-blur-xl duration-300">
-      <div className="max-w-[800px] mx-auto font-mono flex flex-row p-2 px-4">
+    <nav className="duration-300">
+      <div className="max-w-[900px] mx-auto font-mono flex flex-row py-5 px-3">
         <div className="flex-row flex space-x-4">
           <>
             <div className="cursor-pointer my-auto">
               <Link href="/">
-                <a className="my-auto flex">
+                <a className="my-auto flex animate-pulse">
                   <Image
-                    src="/images/korokLogo.png"
+                    src="/images/korok.png"
                     className="my-auto flex"
-                    width={25 * 2.5}
+                    width={25}
                     height={25}
                     alt="logo"
                   />
@@ -102,24 +102,24 @@ function Navbar() {
               </Link>
             </div>
             <NavButton text="About" link="/about" />
-            <NavButton text="What To Expect" link="/whattoexpect" />
+            <NavButton text="Expect" link="/whattoexpect" />
             <NavButton text="Reports" link="/reports" />
           </>
         </div>
         <a
-          className="ml-auto my-auto rounded-full p-2 duration-300 flex hover:text-yellow-300"
+          className="ml-auto my-auto rounded-full duration-300 flex hover:text-yellow-300"
           href="https://discord.gg/Zydc7FtCs8"
         >
           <DiscordAlt className="w-6" />
         </a>
         <a
-          className="ml-1 my-auto rounded-full p-2 duration-300 flex hover:text-yellow-300"
+          className="ml-3 my-auto rounded-full duration-300 flex hover:text-yellow-300"
           href="https://github.com/Haruxe/korokdao"
         >
           <Github className="w-6" />
         </a>
         <a
-          className="mx-1 my-auto rounded-full p-2 duration-300 flex hover:text-yellow-300"
+          className="mx-3 my-auto rounded-full duration-300 flex hover:text-yellow-300"
           href="https://twitter.com/korokdao"
         >
           <Twitter className="w-6" />

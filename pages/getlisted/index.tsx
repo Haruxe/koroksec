@@ -31,7 +31,7 @@ function Home() {
 
   return (
     <>
-      <div className="max-w-[800px] mx-auto font-mono flex p-4 flex-col">
+      <div className="max-w-[900px] mx-auto font-mono flex p-4 flex-col">
         <div className="w-1/2 place-content-center flex flex-col">
           <div>
             <p className="text-lg mb-10">~/pages/getlisted</p>

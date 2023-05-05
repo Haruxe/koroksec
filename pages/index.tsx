@@ -7,14 +7,14 @@ import { motion } from "framer-motion";
 const Home: NextPage = () => {
   return (
     <>
-      <div className="max-w-[800px] mx-auto font-mono flex p-4 ">
+      <div className="max-w-[900px] mx-auto font-mono flex p-4 ">
         <motion.div
           className="h-[80vh] place-content-center flex flex-col"
           initial={{ x: -200 }}
           animate={{ x: 0 }}
         >
           <div>
-            <h1 className="md:text-[4rem] text-[3rem] my-auto mt-3">
+            <h1 className="md:text-[4rem] text-[3rem] my-auto">
               Prevent.
               <br /> Evolve. <span className="text-yellow-300 ">Secure.</span>
             </h1>
