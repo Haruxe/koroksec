@@ -23,11 +23,15 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Korok is a smart contract security collective built around highly collaborative and informative exploit disclosure."
           key="ogdesc"
         />
-        <meta name="twitter:title" content="Korok Collective"></meta>
-        <meta name="twitter:text:title" content="Korok Collective"></meta>
-        <meta name="twitter:image" content="/images/korok.png"></meta>
+        <meta name="twitter:title" content="Korok"></meta>
+        <meta name="twitter:text:title" content="Korok"></meta>
+        <meta
+          name="twitter:image"
+          content="https://i.imgur.com/6VpSZgR.png"
+        ></meta>
         <meta name="twitter:card" content="app"></meta>
         <meta name="twitter:site" content="@korokdao"></meta>
+        <meta name="twitter:creator" content="@haruxeETH"></meta>
         <meta
           name="twitter:description"
           content="Korok is a smart contract security collective built around highly collaborative and informative exploit disclosure."
