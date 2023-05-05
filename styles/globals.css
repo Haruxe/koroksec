@@ -20,10 +20,10 @@ body {
   background-color: #000000;
   opacity: 1;
   background-image: radial-gradient(
-      rgba(239, 255, 10, 0.18) 0.75px,
+      rgba(239, 255, 10, 0.089) 0.75px,
       transparent 0.75px
     ),
-    radial-gradient(rgba(239, 255, 10, 0.18) 0.75px, #000000 0.75px);
+    radial-gradient(rgba(239, 255, 10, 0.103) 0.75px, #000000 0.75px);
   background-size: 30px 30px;
   background-position: 0 0, 15px 15px;
 }

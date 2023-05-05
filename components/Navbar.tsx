@@ -85,7 +85,7 @@ function Navbar() {
 
   return (
     <nav className="duration-300">
-      <div className="max-w-[900px] mx-auto font-mono flex flex-row py-5 px-3">
+      <div className="max-w-[800px] mx-auto font-mono flex flex-row py-5 px-3">
         <div className="flex-row flex space-x-4">
           <>
             <div className="cursor-pointer my-auto">

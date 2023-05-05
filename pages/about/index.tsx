@@ -5,14 +5,14 @@ import Image from "next/image";
 function Home() {
   return (
     <>
-      <div className="max-w-[900px] mx-auto font-mono flex p-4 flex-col">
+      <div className="max-w-[800px] mx-auto font-mono flex p-4 flex-col">
         <div className="place-content-center flex flex-col">
           <div>
             <p className="text-lg mb-10">~/pages/about</p>
           </div>
           <div className="">
             <h1 className="font-bold">Introduction</h1>
-            <p className="sm:text-md leading-relaxed mt-5">
+            <p className="sm:text-md leading-relaxed mt-5 text-zinc-300">
               Korok is a team of highly skilled professionals focused on
               providing quick turnaround times and excellent communication for
               security audits, bug hunting, and security remediation. Led by{" "}
@@ -34,7 +34,7 @@ function Home() {
               and more.
             </p>
             <h1 className="mt-10 font-bold">Our Team</h1>
-            <p className="sm:text-md leading-relaxed mt-5">
+            <p className="sm:text-md leading-relaxed mt-5 text-zinc-300">
               -{" "}
               <a
                 href="https://twitter.com/haruxeETH"
@@ -56,7 +56,7 @@ function Home() {
               experience in developing secure decentralized applications make
               him an invaluable member of the Korok collective.
             </p>
-            <p className="sm:text-md leading-relaxed mt-5">
+            <p className="sm:text-md leading-relaxed mt-5 text-zinc-300">
               -{" "}
               <a
                 href="https://twitter.com/erc1337_Coffee"
@@ -85,7 +85,7 @@ function Home() {
               providing comprehensive security solutions.
             </p>
             <h1 className="mt-10 font-bold">Our Approach</h1>
-            <p className="sm:text-md leading-relaxed mt-5">
+            <p className="sm:text-md leading-relaxed mt-5 text-zinc-300">
               The Korok team aims to streamline the process of security audits,
               bug hunting, and security remediation by maintaining open
               communication channels with the team and ensuring quick turnaround
@@ -93,7 +93,7 @@ function Home() {
               best possible solutions for our clients.
             </p>
             <h1 className="mt-10 font-bold">Get in Touch</h1>
-            <p className="sm:text-md leading-relaxed mt-5">
+            <p className="sm:text-md leading-relaxed mt-5 text-zinc-300">
               If you need our expertise or have any questions, feel free to
               reach out to us on our{" "}
               <a
