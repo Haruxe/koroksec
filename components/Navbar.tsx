@@ -92,9 +92,9 @@ function Navbar() {
               <Link href="/">
                 <a className="my-auto flex">
                   <Image
-                    src="/images/korok.png"
+                    src="/images/korokLogo.png"
                     className="my-auto flex"
-                    width={25}
+                    width={25 * 3}
                     height={25}
                     alt="logo"
                   />
