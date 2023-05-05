@@ -20,14 +20,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:title" content="Korok" key="ogtitle" />
         <meta
           property="og:description"
-          content="Korok is a security collective built around highly collaborative and informative exploit disclosure."
+          content="Korok is a smart contract security collective built around highly collaborative and informative exploit disclosure."
           key="ogdesc"
         />
-        <meta name="twitter:card" content="https://i.imgur.com/XxlsQlD.png" />
-        <meta name="twitter:title" content="Korok"></meta>
+        <meta name="twitter:title" content="Korok Collective"></meta>
+        <meta name="twitter:site" content="@korokdao"></meta>
         <meta
           name="twitter:description"
-          content="Korok is a security collective built around highly collaborative and informative exploit disclosure."
+          content="Korok is a smart contract security collective built around highly collaborative and informative exploit disclosure."
         ></meta>
       </Head>
       <Navbar />
