@@ -13,26 +13,29 @@ function Home() {
           <div>
             <h1 className="font-bold">Introduction</h1>
             <p className="text-sm leading-relaxed mt-5">
-              Korok Security Collective is a team of highly skilled
-              professionals focused on providing quick turnaround times and
-              excellent communication for security audits, bug hunting, and
-              security remediation. Led by @haruxeETH and @erc1337_coffee, who
-              have an impressive background in identifying significant
-              vulnerabilities in major protocols like OpenZeppelin, BAOFinance,
-              and more.
+              Korok is a team of highly skilled professionals focused on
+              providing quick turnaround times and excellent communication for
+              security audits, bug hunting, and security remediation. Led by
+              @haruxeETH and @erc1337_coffee, who have an impressive background
+              in identifying significant vulnerabilities in major protocols like
+              OpenZeppelin, BAOFinance, and more.
             </p>
             <h1 className="mt-10 font-bold">Our Team</h1>
             <p className="text-sm leading-relaxed mt-5">
-              @haruxeETH is an experienced programmer with a background in game
-              development and web development. He has partnered with Immunefi to
-              publish articles and also self-published articles on his own at{" "}
+              @haruxeETH is a talented security researcher and DeFi developer
+              with a background in game development and web development. As a
+              trusted expert in the industry, he has partnered with Immunefi to
+              publish articles and also self-published articles on his own at
+              his{" "}
               <a
-                href="https://mirror.xyz/haruxeETH"
+                href="https://mirror.xyz/haruxe.ETH"
                 className="text-yellow-300"
               >
-                https://mirror.xyz/haruxeETH
+                mirror.xyz
               </a>
-              .
+              . His deep understanding of security vulnerabilities and extensive
+              experience in developing secure decentralized applications make
+              him an invaluable member of the Korok collective.
             </p>
             <p className="text-sm leading-relaxed mt-5">
               @erc1337_coffee has discovered a significant signature
@@ -42,12 +45,11 @@ function Home() {
             </p>
             <h1 className="mt-10 font-bold">Our Approach</h1>
             <p className="text-sm leading-relaxed mt-5">
-              Korok Security Collective aims to streamline the process of
-              security audits, bug hunting, and security remediation by
-              maintaining open communication channels with the team and ensuring
-              quick turnaround times. We believe in transparency and
-              collaboration to provide the best possible solutions for our
-              clients.
+              The Korok team aims to streamline the process of security audits,
+              bug hunting, and security remediation by maintaining open
+              communication channels with the team and ensuring quick turnaround
+              times. We believe in transparency and collaboration to provide the
+              best possible solutions for our clients.
             </p>
             <h1 className="mt-10 font-bold">Get in Touch</h1>
             <p className="text-sm leading-relaxed mt-5">
@@ -59,7 +61,8 @@ function Home() {
               >
                 Discord
               </a>
-              .
+              , or email us at{" "}
+              <span className="text-yellow-300">korokdao@proton.me</span>
             </p>
           </div>
         </div>

@@ -17,24 +17,25 @@ html {
   color-scheme: dark;
 }
 body {
-  color: white;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(21, 21, 21, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background-color: #000000;
+  opacity: 1;
+  background-image: radial-gradient(
+      rgba(252, 222, 71, 0.1) 0.9px,
+      transparent 0.9px
+    ),
+    radial-gradient(rgba(252, 222, 71, 0.1) 0.9px, #000000 0.9px);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
 }
 ::-moz-selection {
   /* Code for Firefox */
   color: black;
-  background: #80c027;
+  background: rgb(253 224 71);
 }
 
 ::selection {
   color: black;
-  background: #80c027;
+  background: rgb(253 224 71);
 }
 
 /*

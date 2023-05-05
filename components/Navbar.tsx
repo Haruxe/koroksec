@@ -87,42 +87,23 @@ function Navbar() {
     <nav className="bg-black bg-opacity-50 backdrop-blur-xl duration-300">
       <div className="max-w-[800px] mx-auto font-mono flex flex-row p-2 px-4">
         <div className="flex-row flex space-x-4">
-          {windowSize.width < 800 ? (
-            <>
-              <Menu className="w-8 cursor-pointer" />
-              <div className="cursor-pointer my-auto">
-                <Link href="/">
-                  <a className="my-auto flex">
-                    <Image
-                      src="/images/korok.png"
-                      className="my-auto flex"
-                      width={25}
-                      height={25}
-                      alt="logo"
-                    />
-                  </a>
-                </Link>
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="cursor-pointer my-auto">
-                <Link href="/">
-                  <a className="my-auto flex">
-                    <Image
-                      src="/images/korok.png"
-                      className="my-auto flex"
-                      width={25}
-                      height={25}
-                      alt="logo"
-                    />
-                  </a>
-                </Link>
-              </div>
-              <NavButton text="Reports" link="/reports" />
-              <NavButton text="About" link="/about" />
-            </>
-          )}
+          <>
+            <div className="cursor-pointer my-auto">
+              <Link href="/">
+                <a className="my-auto flex">
+                  <Image
+                    src="/images/korok.png"
+                    className="my-auto flex"
+                    width={25}
+                    height={25}
+                    alt="logo"
+                  />
+                </a>
+              </Link>
+            </div>
+            <NavButton text="Reports" link="/reports" />
+            <NavButton text="About" link="/about" />
+          </>
         </div>
         <a
           className="ml-auto my-auto rounded-full p-2 duration-300 flex hover:text-yellow-300"
@@ -131,14 +112,14 @@ function Navbar() {
           <DiscordAlt className="w-6" />
         </a>
         <a
-          className="ml-3 my-auto rounded-full p-2 duration-300 flex hover:text-yellow-300"
+          className="ml-1 my-auto rounded-full p-2 duration-300 flex hover:text-yellow-300"
           href="https://github.com/Haruxe/korokdao"
         >
           <Github className="w-6" />
         </a>
         <a
-          className="mx-3 my-auto rounded-full p-2 duration-300 flex hover:text-yellow-300"
-          href="https://twitter.com"
+          className="mx-1 my-auto rounded-full p-2 duration-300 flex hover:text-yellow-300"
+          href="https://twitter.com/korokdao"
         >
           <Twitter className="w-6" />
         </a>
