@@ -24,6 +24,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           key="ogdesc"
         />
         <meta name="twitter:title" content="Korok Collective"></meta>
+        <meta name="twitter:image" content="/images/korok.png"></meta>
+        <meta name="twitter:card" content="app"></meta>
         <meta name="twitter:site" content="@korokdao"></meta>
         <meta
           name="twitter:description"
