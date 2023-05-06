@@ -114,13 +114,13 @@ function Navbar() {
         </a>
         <a
           className="ml-3 my-auto rounded-full duration-300 flex hover:text-yellow-300"
-          href="https://github.com/Haruxe/korokdao"
+          href="https://github.com/Haruxe/koroksec"
         >
           <Github className="w-6" />
         </a>
         <a
           className="mx-3 my-auto rounded-full duration-300 flex hover:text-yellow-300"
-          href="https://twitter.com/korokdao"
+          href="https://twitter.com/koroksec"
         >
           <Twitter className="w-6" />
         </a>

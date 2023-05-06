@@ -13,7 +13,7 @@ function Home() {
           <div className="">
             <h1 className="font-bold">Introduction</h1>
             <p className="sm:text-md text-sm leading-relaxed mt-5 text-zinc-300">
-              Korok is a team of highly skilled professionals focused on
+              Koroksec is a team of highly skilled professionals focused on
               providing quick turnaround times and excellent communication for
               security audits, bug hunting, and security remediation. Led by{" "}
               <a
@@ -54,7 +54,7 @@ function Home() {
               </a>
               . His deep understanding of security vulnerabilities and extensive
               experience in developing secure decentralized applications make
-              him an invaluable member of the Korok collective.
+              him an invaluable member of the Koroksec team.
             </p>
             <p className="sm:text-md text-sm leading-relaxed mt-5 text-zinc-300">
               -{" "}
@@ -68,9 +68,9 @@ function Home() {
               discovered a significant signature vulnerability in
               OpenZeppelin&apos;s core contracts, which put millions at risk.
               With an extensive background in web2 auditing and bug hunting
-              experience, he brings valuable expertise to the Korok Security
-              Collective team. In addition to his work in security,
-              @erc1337_coffee has also created numerous{" "}
+              experience, he brings valuable expertise to the Koroksec team. In
+              addition to his work in security, @erc1337_coffee has also created
+              numerous{" "}
               <a href="https://erc1337.tools/" className="text-yellow-300">
                 tooling
               </a>{" "}
@@ -86,8 +86,8 @@ function Home() {
             </p>
             <h1 className="mt-10 font-bold">Our Approach</h1>
             <p className="sm:text-md text-sm leading-relaxed mt-5 text-zinc-300">
-              The Korok team aims to streamline the process of security audits,
-              bug hunting, and security remediation by maintaining open
+              The Koroksec team aims to streamline the process of security
+              audits, bug hunting, and security remediation by maintaining open
               communication channels with the team and ensuring quick turnaround
               times. We believe in transparency and collaboration to provide the
               best possible solutions for our clients.
@@ -103,10 +103,10 @@ function Home() {
                 Discord
               </a>
               , email us at{" "}
-              <span className="text-yellow-300">korokdao@proton.me</span>, or DM
+              <span className="text-yellow-300">koroksec@proton.me</span>, or DM
               us on{" "}
               <a
-                href="https://twitter.com/korokdao"
+                href="https://twitter.com/koroksec"
                 className="text-yellow-300"
               >
                 Twitter

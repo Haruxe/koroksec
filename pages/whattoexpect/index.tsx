@@ -38,7 +38,7 @@ function Home() {
                 and growth of your project.
               </li>
             </ul>
-            <p className="leading-relaxed mt-5 sm:text-md text-zinc-300">
+            <p className="leading-relaxed mt-5 text-sm sm:text-md text-zinc-300">
               With Korok Security Collective, you can trust that your protocol
               is in good hands, and we will work tirelessly to ensure its
               protection and success.
