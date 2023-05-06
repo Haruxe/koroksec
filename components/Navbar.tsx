@@ -63,7 +63,7 @@ function Navbar() {
   // @ts-ignore
   function NavButton({ text, link }) {
     return (
-      <div className="my-auto cursor-pointer font-bold px-1 sm:px-2 duration-300 flex hover:text-yellow-300">
+      <div className="my-auto cursor-pointer px-1 sm:px-2 duration-300 flex hover:text-yellow-300">
         <Link href={link}>
           <a className="my-auto">
             <h1 className="text-[.75rem] sm:text-sm tracking-wide">{text}</h1>
@@ -84,8 +84,8 @@ function Navbar() {
   }
 
   return (
-    <nav className="duration-300">
-      <div className="max-w-[800px] mx-auto font-mono flex flex-row py-5 px-3">
+    <nav className="duration-300 fixed w-full backdrop-blur-sm">
+      <div className="max-w-[800px] mx-auto font-mono flex flex-row duration-300 py-2 sm:py-5 px-3">
         <div className="flex-row flex space-x-4">
           <>
             <div className="cursor-pointer my-auto">

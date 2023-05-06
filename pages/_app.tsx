@@ -1,16 +1,17 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Korok</title>
-        <meta name="description" content="Korok" />
+        <title>koroksec</title>
+        <meta name="description" content="korok" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:url" content="https://korok.xyz" key="ogurl" />
+        <meta property="og:url" content="https://koroksec.xyz" key="ogurl" />
         <meta
           property="og:image"
           content="https://i.imgur.com/XxlsQlD.png"
@@ -29,8 +30,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="twitter:image"
           content="https://i.imgur.com/6VpSZgR.png"
         ></meta>
-        <meta name="twitter:card" content="app"></meta>
-        <meta name="twitter:site" content="@korokdao"></meta>
+        <meta name="twitter:card" content="summary"></meta>
+        <meta name="twitter:site" content="@koroksec"></meta>
         <meta name="twitter:creator" content="@haruxeETH"></meta>
         <meta
           name="twitter:description"
@@ -38,7 +39,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         ></meta>
       </Head>
       <Navbar />
+      <div className="sm:pt-20 duration-300 pt-10" />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
