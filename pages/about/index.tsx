@@ -92,26 +92,34 @@ function Home() {
               times. We believe in transparency and collaboration to provide the
               best possible solutions for our clients.
             </p>
-            <h1 className="mt-10 font-bold">Get in Touch</h1>
             <p className="sm:text-md text-sm leading-relaxed mt-5 text-zinc-300">
-              If you need our expertise or have any questions, feel free to
-              reach out to us on our{" "}
-              <a
-                className="w-6 ml-auto my-auto text-yellow-300"
-                href="https://discord.gg/Zydc7FtCs8"
-              >
-                Discord
-              </a>
-              , email us at{" "}
-              <span className="text-yellow-300">koroksec@proton.me</span>, or DM
-              us on{" "}
-              <a
-                href="https://twitter.com/koroksec"
-                className="text-yellow-300"
-              >
-                Twitter
-              </a>
-              .
+              When hiring Koroksec, protocols can expect top-notch services that
+              cater to their specific needs. Our process includes:
+            </p>
+            <ul className="sm:text-md text-sm list-inside leading-relaxed mt-5 space-y-6 text-zinc-300">
+              <li>
+                - A <b>thorough and comprehensive security audit</b> to identify
+                potential vulnerabilities and assess the overall security of
+                your protocol.
+              </li>
+              <li>
+                - <b>Open and transparent communication</b> throughout the
+                process, keeping you informed and engaged every step of the way.
+              </li>
+              <li>
+                - <b>Tailored security remediation solutions</b> to address any
+                identified vulnerabilities or weaknesses, ensuring the long-term
+                safety and success of your protocol.
+              </li>
+              <li>
+                - <b>Ongoing support and collaboration</b> even after the
+                completion of our services, to guarantee the continued security
+                and growth of your project.
+              </li>
+            </ul>
+            <p className="leading-relaxed mt-5 text-sm sm:text-md text-zinc-300">
+              With Koroksec, you can trust that your protocol is in good hands,
+              and we will work tirelessly to ensure its protection and success.
             </p>
           </div>
         </div>

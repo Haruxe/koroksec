@@ -11,7 +11,7 @@ function Home() {
             <p className="text-lg mb-10">~/pages/reports</p>
           </div>
         </div>
-        <h1 className="font-bold">Coming Soon...</h1>
+        <h1 className="">Coming Soon...</h1>
         <p className="text-sm leading-relaxed mt-5"></p>
       </div>
     </>

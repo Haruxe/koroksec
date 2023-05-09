@@ -102,7 +102,7 @@ function Navbar() {
               </Link>
             </div>
             <NavButton text="About" link="/about" />
-            <NavButton text="Expect" link="/whattoexpect" />
+            <NavButton text="Contact" link="/contact" />
             <NavButton text="Reports" link="/reports" />
           </>
         </div>
