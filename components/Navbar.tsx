@@ -108,7 +108,7 @@ function Navbar() {
         </div>
         <a
           className="ml-auto my-auto rounded-full duration-300 flex hover:text-yellow-300"
-          href="https://discord.gg/Zydc7FtCs8"
+          href="https://discord.gg/7u8JJyKNNn"
         >
           <DiscordAlt className="w-6" />
         </a>
