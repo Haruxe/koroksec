@@ -114,7 +114,7 @@ function Navbar() {
         </a>
         <a
           className="ml-3 my-auto rounded-full duration-300 flex hover:text-yellow-300"
-          href="https://github.com/Haruxe/koroksec"
+          href="https://github.com/Koroksec/Website"
         >
           <Github className="w-6" />
         </a>
