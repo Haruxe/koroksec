@@ -93,7 +93,7 @@ function Navbar() {
                 <a className="my-auto flex animate-pulse">
                   <Image
                     src="/images/korok.png"
-                    className="my-auto flex"
+                    className="my-auto flex hover:invert transition duration-700 ease-in-out"
                     width={25}
                     height={25}
                     alt="logo"
@@ -101,6 +101,7 @@ function Navbar() {
                 </a>
               </Link>
             </div>
+            <NavButton text="Tools" link="/tools" />
             <NavButton text="About" link="/about" />
             <NavButton text="Contact" link="/contact" />
             <NavButton text="Reports" link="/reports" />
