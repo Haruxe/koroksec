@@ -9,23 +9,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Space-Grotesk";
+  src: url("/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+}
+
 * {
-  font-family: "Space-Mono";
+  font-family: "Space-Grotesk";
 }
 
 html {
   color-scheme: dark;
 }
 body {
-  background-color: #000000;
-  opacity: 1;
-  background-image: radial-gradient(
-      rgba(239, 255, 10, 0.089) 0.75px,
-      transparent 0.75px
-    ),
-    radial-gradient(rgba(239, 255, 10, 0.103) 0.75px, #000000 0.75px);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
+  background-color: #070707;
 }
 
 ::-moz-selection {
@@ -37,6 +34,10 @@ body {
 ::selection {
   color: black;
   background: rgb(253 224 71);
+}
+
+.font-mono {
+  font-family: "Space-Mono";
 }
 
 /*

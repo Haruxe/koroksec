@@ -12,7 +12,7 @@ function Home() {
           </div>
         </div>
         <h1 className="">Coming Soon...</h1>
-        <p className="text-sm leading-relaxed mt-5"></p>
+        <p className="text-md leading-relaxed mt-5"></p>
       </div>
     </>
   );

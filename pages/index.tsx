@@ -14,11 +14,11 @@ const Home: NextPage = () => {
           animate={{ x: 0 }}
         >
           <div>
-            <h1 className="md:text-[4rem] text-[2rem] my-auto">
+            <h1 className="text-[4rem]  my-auto font-black">
               Prevent.
               <br /> Evolve. <span className="text-yellow-300 ">Secure.</span>
             </h1>
-            <p className="md:text-[1rem] text-[.75rem] md:my-10 my-8 ">
+            <p className="text-[1.3rem] md:my-10 my-8 opacity-70">
               Korok is a security collective built around highly
               <br /> collaborative and informative exploit disclosure.
             </p>

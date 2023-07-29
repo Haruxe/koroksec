@@ -66,7 +66,7 @@ function Navbar() {
       <div className="my-auto cursor-pointer px-1 sm:px-2 duration-300 flex hover:text-yellow-300">
         <Link href={link}>
           <a className="my-auto">
-            <h1 className="text-[.75rem] sm:text-sm tracking-wide">{text}</h1>
+            <h1 className="text-[.75rem] sm:text-lg tracking-wide">{text}</h1>
           </a>
         </Link>
       </div>
@@ -84,18 +84,18 @@ function Navbar() {
   }
 
   return (
-    <nav className="duration-300 fixed w-full backdrop-blur-sm">
-      <div className="max-w-[800px] mx-auto font-mono flex flex-row duration-300 py-2 sm:py-5 px-3">
+    <nav className="duration-300 fixed w-full backdrop-blur-s">
+      <div className="max-w-[800px] mx-auto font-mono flex flex-row duration-300 py-5 px-3">
         <div className="flex-row flex space-x-4">
           <>
             <div className="cursor-pointer my-auto">
               <Link href="/">
-                <a className="my-auto flex animate-pulse">
+                <a className="my-auto flex">
                   <Image
                     src="/images/korok.png"
-                    className="my-auto flex hover:invert transition duration-700 ease-in-out"
-                    width={25}
-                    height={25}
+                    className="my-auto flex"
+                    width={32}
+                    height={32}
                     alt="logo"
                   />
                 </a>
@@ -115,7 +115,7 @@ function Navbar() {
         </a>
         <a
           className="ml-3 my-auto rounded-full duration-300 flex hover:text-yellow-300"
-          href="https://github.com/Koroksec/Website"
+          href="https://github.com/Koroksec"
         >
           <Github className="w-6" />
         </a>

@@ -38,11 +38,11 @@ function Home() {
           </div>
         </div>
         <h1 className="font-bold">Contact Us</h1>
-        <p className="sm:text-md text-sm leading-relaxed mt-5 text-zinc-300">
+        <p className="sm:text-lg text-md leading-relaxed mt-5 text-zinc-300">
           Scheduling a private audit with Koroksec is a seamless process.
           Here&apos;s what you can expect:
         </p>
-        <ul className="sm:text-md text-sm list-inside leading-relaxed mt-5 space-y-6 text-zinc-300">
+        <ul className="sm:text-lg text-md list-inside leading-relaxed mt-5 space-y-6 text-zinc-300">
           <li>
             1. <b>Initial Consultation:</b> Reach out to us via Discord, email,
             or Twitter to discuss your security needs.
@@ -61,11 +61,11 @@ function Home() {
             to discuss our findings and recommended actions.
           </li>
         </ul>
-        <p className="sm:text-md text-sm leading-relaxed mt-5 text-zinc-300">
+        <p className="sm:text-lg text-md leading-relaxed mt-5 text-zinc-300">
           Ready to ensure the security of your protocol with Koroksec? Get in
           touch with us.
         </p>
-        <p className="sm:text-md text-sm leading-relaxed mt-5 text-zinc-300">
+        <p className="sm:text-lg text-md leading-relaxed mt-5 text-zinc-300">
           Join our{" "}
           <a className="text-yellow-300" href="https://discord.gg/Zydc7FtCs8">
             Discord
